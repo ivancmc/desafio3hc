@@ -46,6 +46,7 @@
   "image#logo": {
     "props": {
       "src": "assets/logo.png",
+      "link": "/",
       "maxHeight": 42
     }
   },
