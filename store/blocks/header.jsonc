@@ -28,8 +28,7 @@
       "flex-layout.col#logo-desktop",
       "flex-layout.col#spacer",
       "search-bar",
-      "locale-switcher",
-      "login",
+      "flex-layout.col#spacer",
       "minicart.v2"
     ]
   },
@@ -42,14 +41,17 @@
     "props": {
       "verticalAlign": "middle"
     },
-    "children": ["logo"]
+    "children": ["image#logo"]
   },
-  "logo": {
+  "image#logo": {
     "props": {
-      "title": "Logo",
-      "href": "/",
-      "url": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg",
-      "width": "80"
+      "src": "assets/logo.png",
+      "maxHeight": 42
+    }
+  },
+  "search-bar": {
+    "props": {
+      "placeholder": "BUSCAR"
     }
   },
   "header-layout.mobile": {
@@ -60,10 +62,9 @@
   },
   "flex-layout.row#mobile": {
     "children": [
-      "drawer",
-      "logo",
+      // "drawer",
+      "image#logo",
       "flex-layout.col#spacer",
-      "login",
       "minicart.v2"
     ],
     "props": {
