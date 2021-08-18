@@ -47,7 +47,9 @@
     "props": {
       "src": "assets/logo.png",
       "link": "/",
-      "maxHeight": 42
+      "maxHeight": 42,
+      "title": "Logo",
+      "alt": "Logotipo da loja"
     }
   },
   "search-bar": {
@@ -59,13 +61,17 @@
     "children": ["sticky-layout#mobile"]
   },
   "sticky-layout#mobile": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
     "children": ["flex-layout.row#mobile"]
   },
   "flex-layout.row#mobile": {
     "children": [
       // "drawer",
       "image#logo",
-      "flex-layout.col#spacer",
+      // "flex-layout.col#spacer",
+      "search-bar",
       "minicart.v2"
     ],
     "props": {

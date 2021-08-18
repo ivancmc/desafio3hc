@@ -1,0 +1,4 @@
+/* Cor do input search no header */
+.searchIcon, .searchBarContainer :first-child{
+    color: white;
+}
