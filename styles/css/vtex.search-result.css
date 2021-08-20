@@ -1,0 +1,9 @@
+.gallery{
+    padding-left: 2px;
+}
+
+@media only all and (min-width: 1300px) {
+   .gallery{
+        margin: -.75rem 15rem;
+    }
+}

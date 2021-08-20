@@ -7,14 +7,8 @@
   },
   "header-layout.desktop": {
     "children": [
-      "sticky-layout#desktop"
+      "flex-layout.row#desktop"
     ]
-  },
-  "sticky-layout#desktop": {
-    "props": {
-      "blockClass": "sticky-header"
-    },
-    "children": ["flex-layout.row#desktop"]
   },
   "flex-layout.row#desktop": {
     "props": {
@@ -22,7 +16,8 @@
       "verticalAlign": "center",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
-      "fullWidth": true
+      "fullWidth": true,
+      "blockClass": "header1"
     },
     "children": [
       "flex-layout.col#logo-desktop",
@@ -56,7 +51,8 @@
     "props": {
       "placeholder": "BUSCAR"
     }
-  },
+  },  
+
   "header-layout.mobile": {
     "children": ["sticky-layout#mobile"]
   },
@@ -80,8 +76,8 @@
       "preserveLayoutOnMobile": true,
       "fullWidth": true
     }
-  },
-  "drawer": {
-    "children": []
   }
+  // "drawer": {
+  //   "children": []
+  // }
 }

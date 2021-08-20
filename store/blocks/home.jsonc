@@ -1,9 +1,44 @@
 {
   "store.home": { 
     "blocks": [
-      "slider-layout#banners"
+      "tab-layout"
     ]
   },
+
+  "tab-layout": {
+    "children": [
+      "flex-layout.row##tabs",
+      "slider-layout#banners",
+      "tab-content"
+    ]
+  },
+  "flex-layout.row##tabs": {
+    "props": {
+      "blockClass": "header2"
+    },
+    "children": ["tab-list"]
+  },
+  "tab-list": {
+    "children": [
+      "tab-list.item#1",
+      "tab-list.item#2"
+      ]
+  },
+
+  "tab-list.item#1": {
+    "props": {
+      "tabId": "aleatorios",
+      "label": "Aleatórios",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-list.item#2": {
+    "props": {
+      "tabId": "palmeiras",
+      "label": "Palmeiras"
+    }
+  },
+
   "slider-layout#banners": {
     "props": {
       "itemsPerPage": {
@@ -14,11 +49,10 @@
       "infinite": true,
       "showNavigationArrows": "desktopOnly",
       "fullWidth": true,
-      "blockClass": "carousel"
+      "blockClass": "slider"
     },
     "children": ["image#banner1", "image#banner2"]
   },
-
   "image#banner1": {
     "props": {
       "src": "assets/banner1.png",
@@ -33,6 +67,127 @@
       "link": "/",
       "maxHeight": 275,
       "title": "Banner 2"
+    }
+  },
+
+  "tab-content": {
+    "children": [
+      "tab-content.item#1",
+      "tab-content.item#2"
+      ]
+  },
+  "tab-content.item#1": {
+    "children": [
+      "search-result-layout.customQuery#aleatorios"
+    ],
+    "props": {
+      "tabId": "aleatorios"
+    }
+  },
+  "tab-content.item#2": {
+    "children": [
+      "search-result-layout.customQuery#palmeiras"
+    ],
+    "props": {
+      "tabId": "palmeiras"
+    }
+  },
+
+  "search-result-layout.customQuery#aleatorios": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 8,
+        "queryField": "142",
+        "mapField": "productClusterIds"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  },
+
+  "search-result-layout.customQuery#palmeiras": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 8,
+        "queryField": "143",
+        "mapField": "productClusterIds"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  },
+
+  "search-result-layout.desktop": {
+    "children": [
+      "flex-layout.row#results",
+      "search-fetch-more"
+    ],
+    "props": {
+      "pagination": "show-more",
+      "preventRouteChange": true,
+      "defaultGalleryLayout": "duasColunas"
+    }
+  },
+  "flex-layout.row#results": { 
+    "children": [ 
+      "flex-layout.col#search"
+    ]
+  },
+  "flex-layout.col#search": { 
+    "children": [
+      "search-content"
+    ]
+  },
+  "search-content": { 
+    "blocks": ["gallery", "not-found"]
+  },
+  "gallery": {
+    "props": {
+      "layouts": [
+        {
+          "name": "umaColuna",
+          "component": "DuasCols",
+          "itemsPerRow": 1
+        },
+        {
+          "name": "duasColunas",
+          "component": "DuasCols",
+          "itemsPerRow": 2
+        }
+      ],
+      "DuasCols": "product-summary.shelf"
+    }
+  },
+  "search-result-layout.mobile": {
+    "children": [
+      "flex-layout.row#results",
+      "search-fetch-more"
+    ],
+    "props": {
+      "pagination": "show-more",
+      "preventRouteChange": true,
+      "defaultGalleryLayout": "umaColuna",
+      "mobileLayout":{
+        "mode1": "small"
+      }
+    }
+  },
+
+  "rich-text#2": {
+    "props": {
+      "text": "Texto para Palmeiras",
+      "textPosition": "CENTER",
+      "font": "t-heading-3"
     }
   }
 }

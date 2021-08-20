@@ -1,3 +1,12 @@
-.sliderLayoutContainer--carousel{
+.sliderLayoutContainer--slider{
     background-color: transparent;
+    margin-top: 70px;
+    margin-bottom: 10px;
+    padding-bottom: 15px;
 }
+
+@media only all and (min-width: 1030px) {
+    .sliderLayoutContainer--slider{
+        margin-top: 130px;
+     }
+ }

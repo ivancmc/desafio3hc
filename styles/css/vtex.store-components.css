@@ -2,3 +2,7 @@
 .searchIcon, .searchBarContainer :first-child{
     color: white;
 }
+
+.imageElement{
+    border-radius: 20px;
+}

@@ -2,3 +2,24 @@
 .flexRowContent--main-header-mobile{
     background-color: #212121;
 }
+
+.flexRowContent--header1{
+    color: #fff;
+    background-color: #212121;
+    top: 0;
+    left: auto;
+    right: 0;
+    position: fixed;
+    z-index: 10;
+}
+
+.flexRowContent--header2{
+    color: #fff;
+    background-color: #212121;
+    top: 55px;
+    left: auto;
+    right: 0;
+    position: fixed;
+    z-index: 10;
+    box-shadow: 0px 4px 4px 2px rgb(0 0 0 / 20%);
+}
