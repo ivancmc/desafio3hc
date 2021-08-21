@@ -1,4 +1,4 @@
-.minicartCheckoutButton{
+.minicartCheckoutButton :first-child{
     color: black;
 }
 
