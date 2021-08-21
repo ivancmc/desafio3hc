@@ -7,3 +7,11 @@
         margin: -.75rem 15rem;
     }
 }
+
+.buttonShowMore{
+    padding: 10px;
+}
+
+.buttonShowMore :first-child{
+    color: black;
+}

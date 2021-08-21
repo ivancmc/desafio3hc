@@ -79,7 +79,7 @@
   "semanticColors": {
     "background": {
       "base": "#303030",
-      "base--inverted": "#03044e",
+      "base--inverted": "#8bc34a",
       "action-primary": "#59ff00",
       "action-secondary": "#eef3f7",
       "emphasis": "#55ff08",
@@ -131,7 +131,7 @@
     "text": {
       "action-primary": "#59ff00",
       "action-secondary": "#eef3f7",
-      "link": "#0F3E99",
+      "link": "greenyellow",
       "emphasis": "#f71963",
       "disabled": "#979899",
       "success": "#8bc34a",
@@ -152,7 +152,7 @@
     "hover-text": {
       "action-primary": "#072c75",
       "action-secondary": "#dbe9fd",
-      "link": "#0c389f",
+      "link": "#8bc34a",
       "emphasis": "#dd1659",
       "success": "#8bc34a",
       "success--faded": "#eafce3",

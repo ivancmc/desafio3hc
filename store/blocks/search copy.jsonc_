@@ -56,17 +56,17 @@
     },
     "search-result-layout": {
         "blocks": [
-            "search-result-layout.desktop#search",
-            "search-result-layout.mobile#busca",
+            "search-result-layout.desktop",
+            "search-result-layout.mobile",
             "search-not-found-layout"
         ]
     },
-    "search-result-layout.desktop#search": {
+    "search-result-layout.desktop": {
         "children": [
-            "breadcrumb.search",
-            "search-title.v2",
-            "flex-layout.row#top",
-            "search-fetch-previous",
+            // "breadcrumb.search",
+            // "search-title.v2",
+            // "flex-layout.row#top",
+            // "search-fetch-previous",
             "flex-layout.row#result",
             "search-fetch-more"
         ],
@@ -84,7 +84,7 @@
     "flex-layout.row#result": {
         "children": [
             "flex-layout.col#filter",
-            "flex-layout.col#busca"
+            "flex-layout.col#search"
         ]
     },
     "flex-layout.col#filter": {
@@ -95,56 +95,20 @@
             "filter-navigator.v3"
         ]
     },
-    "flex-layout.col#busca": {
+    "flex-layout.col#search": {
         "children": [
-            "search-content#busca"
+            "search-content"
         ]
     },
-    "search-content#busca": {
+    "search-content": {
         "blocks": [
-            "gallery#busca",
+            "gallery",
             "not-found"
         ]
     },
-    "gallery#busca": {
-        "props": {
-            "layouts": [
-                {
-                    "name": "umaColuna",
-                    "component": "DuasCols",
-                    "itemsPerRow": 1
-                },
-                {
-                    "name": "duasColunas",
-                    "component": "DuasCols",
-                    "itemsPerRow": 2
-                }
-            ],
-            "DuasCols": "product-summary.shelf#busca"
-        }
-    },
-    "search-result-layout.mobile#busca": {
-        "children": [
-            "flex-layout.row#result",
-            "search-fetch-more"
-        ],
-        "props": {
-            "pagination": "show-more",
-            "preventRouteChange": true,
-            "defaultGalleryLayout": "umaColuna",
-            "mobileLayout": {
-                "mode1": "small"
-            }
-        }
-    },
-    "search-not-found-layout": {
-      "children": ["flex-layout.row#notfound"]
-    },
-  
-    "flex-layout.row#notfound": {
-      "children": ["not-found"],
-      "props": {
-        "fullWidth": true
-      }
+    "gallery": {
+        "blocks": [
+            "product-summary.shelf"
+        ]
     }
 }
