@@ -1,6 +1,17 @@
+.flexColChild--logoDesktop{
+    padding-left: 10px;
+}
+
+.flexColChild--logoMobile{
+    padding-left: 5px;
+    padding-top: 5px;
+    margin-right: 5px;
+}
+
 /* Definindo a cor do background no mobile */
 .flexRowContent--main-header-mobile{
     background-color: #212121;
+    justify-content: space-between;
 }
 
 .flexRowContent--header1{
@@ -11,6 +22,10 @@
     right: 0;
     position: fixed;
     z-index: 10;
+}
+
+.flexRowContent--header1 :nth-child(3n){
+    flex-grow: 2;
 }
 
 .flexRowContent--header2{

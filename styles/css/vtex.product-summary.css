@@ -11,6 +11,18 @@
     padding-bottom: 0.75rem;
 }
 
-.nameContainer{
-    padding-bottom: 0;
+.productBrand{
+    font-size: 1.25rem;
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.sellingPrice{
+    color: #59ff00;
+    font-weight: bold;
+}
+
+.price_installmentContainer{
+    color: white;
 }

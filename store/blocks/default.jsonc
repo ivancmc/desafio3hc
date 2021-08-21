@@ -24,28 +24,24 @@
 
   "product-summary.shelf": {
     "children": [
-      "stack-layout#prodsum",
       // "product-summary-add-to-list-button",
       "product-summary-name",
-      // "product-rating-inline",
       // "product-summary-space",
+      "product-images#shelf",
+      // "product-rating-inline",
       "product-summary-price",
       // "product-identifier.summary",
       "add-to-cart-button"
     ]
   },
-
-  "stack-layout#prodsum": {
-    "children": [
-      "product-summary-image#shelf"
-    ]
-  },
-
-  "product-summary-image#shelf": {
+  "product-images#shelf": {
     "props": {
       "showBadge": true,
       "aspectRatio": "1:1",
-      "maxHeight": 300
+      "maxHeight": 300,
+      "thumbnailsOrientation": "horizontal",
+      "thumbnailMaxHeight": 1,
+      "zoomMode": "in-place-hover"
     }
   }
 }

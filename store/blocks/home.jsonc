@@ -20,22 +20,43 @@
   },
   "tab-list": {
     "children": [
-      "tab-list.item#1",
-      "tab-list.item#2"
+      "tab-list.item#cat1",
+      "tab-list.item#cat2",
+      "tab-list.item#cat3",
+      "tab-list.item#cat4",
+      "tab-list.item#cat5"
       ]
   },
 
-  "tab-list.item#1": {
+  "tab-list.item#cat1": {
     "props": {
-      "tabId": "aleatorios",
-      "label": "Aleatórios",
+      "tabId": "categoria1",
+      "label": "Categoria 1",
       "defaultActiveTab": true
     }
   },
-  "tab-list.item#2": {
+  "tab-list.item#cat2": {
     "props": {
-      "tabId": "palmeiras",
-      "label": "Palmeiras"
+      "tabId": "categoria2",
+      "label": "Categoria 2"
+    }
+  },
+  "tab-list.item#cat3": {
+    "props": {
+      "tabId": "categoria3",
+      "label": "Categoria 3"
+    }
+  },
+  "tab-list.item#cat4": {
+    "props": {
+      "tabId": "categoria4",
+      "label": "Categoria 4"
+    }
+  },
+  "tab-list.item#cat5": {
+    "props": {
+      "tabId": "categoria5",
+      "label": "Categoria 5"
     }
   },
 
@@ -72,34 +93,61 @@
 
   "tab-content": {
     "children": [
-      "tab-content.item#1",
-      "tab-content.item#2"
+      "tab-content.item#cat1",
+      "tab-content.item#cat2",
+      "tab-content.item#cat3",
+      "tab-content.item#cat4",
+      "tab-content.item#cat5"
       ]
   },
-  "tab-content.item#1": {
+  "tab-content.item#cat1": {
     "children": [
-      "search-result-layout.customQuery#aleatorios"
+      "search-result-layout.customQuery#categoria1"
     ],
     "props": {
-      "tabId": "aleatorios"
+      "tabId": "categoria1"
     }
   },
-  "tab-content.item#2": {
+  "tab-content.item#cat2": {
     "children": [
-      "search-result-layout.customQuery#palmeiras"
+      "search-result-layout.customQuery#categoria2"
     ],
     "props": {
-      "tabId": "palmeiras"
+      "tabId": "categoria2"
+    }
+  },
+  "tab-content.item#cat3": {
+    "children": [
+      "search-result-layout.customQuery#categoria3"
+    ],
+    "props": {
+      "tabId": "categoria3"
+    }
+  },
+  "tab-content.item#cat4": {
+    "children": [
+      "search-result-layout.customQuery#categoria4"
+    ],
+    "props": {
+      "tabId": "categoria4"
+    }
+  },
+  "tab-content.item#cat5": {
+    "children": [
+      "search-result-layout.customQuery#categoria5"
+    ],
+    "props": {
+      "tabId": "categoria5"
     }
   },
 
-  "search-result-layout.customQuery#aleatorios": {
+  "search-result-layout.customQuery#categoria1": {
     "props": {
       "querySchema": {
         "orderByField": "OrderByReleaseDateDESC",
         "hideUnavailableItems": true,
         "maxItemsPerPage": 8,
-        "queryField": "142",
+        "queryField": "149",
         "mapField": "productClusterIds"
       }
     },
@@ -109,14 +157,61 @@
       "search-not-found-layout"
     ]
   },
-
-  "search-result-layout.customQuery#palmeiras": {
+  "search-result-layout.customQuery#categoria2": {
     "props": {
       "querySchema": {
         "orderByField": "OrderByReleaseDateDESC",
         "hideUnavailableItems": true,
         "maxItemsPerPage": 8,
-        "queryField": "143",
+        "queryField": "147",
+        "mapField": "productClusterIds"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  },
+  "search-result-layout.customQuery#categoria3": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 8,
+        "queryField": "148",
+        "mapField": "productClusterIds"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  },
+  "search-result-layout.customQuery#categoria4": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 8,
+        "queryField": "150",
+        "mapField": "productClusterIds"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  },
+  "search-result-layout.customQuery#categoria5": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 8,
+        "queryField": "151",
         "mapField": "productClusterIds"
       }
     },
@@ -180,14 +275,6 @@
       "mobileLayout":{
         "mode1": "small"
       }
-    }
-  },
-
-  "rich-text#2": {
-    "props": {
-      "text": "Texto para Palmeiras",
-      "textPosition": "CENTER",
-      "font": "t-heading-3"
     }
   }
 }

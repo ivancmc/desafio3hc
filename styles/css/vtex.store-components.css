@@ -1,8 +1,18 @@
 /* Cor do input search no header */
 .searchIcon, .searchBarContainer :first-child{
     color: white;
+    border: 0px;
+    /* background-color: transparent; */
+}
+
+.searchBarInnerContainer :nth-child(3n){
+    border-bottom: 2px solid rgba(255, 255, 255, 0.7);
 }
 
 .imageElement{
     border-radius: 20px;
+}
+
+.carouselGaleryThumbs{
+    display: none;
 }
