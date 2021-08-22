@@ -31,7 +31,8 @@
       // "product-rating-inline",
       "product-summary-price",
       // "product-identifier.summary",
-      "add-to-cart-button"
+      "link.product"
+      // "add-to-cart-button"
     ]
   },
   "product-images#shelf": {
@@ -44,30 +45,23 @@
       "zoomMode": "in-place-hover"
     }
   },
+  "link.product": {
+    "props": {
+      "href": "/{slug}/p",
+      "label": "VER DETALHES",
+      "displayMode": "button"
+    }
+  },
   "product-summary.shelf#busca": {
     "children": [
-      "stack-layout#prodsum",
-      // "product-summary-add-to-list-button",
       "product-summary-name",
+      "product-images#shelf",
+      // "product-summary-add-to-list-button",
       // "product-rating-inline",
       // "product-summary-space",
       "product-summary-price",
       // "product-identifier.summary",
       "add-to-cart-button"
     ]
-  },
-
-  "stack-layout#prodsum": {
-    "children": [
-      "product-summary-image#shelf"
-    ]
-  },
-
-  "product-summary-image#shelf": {
-    "props": {
-      "showBadge": true,
-      "aspectRatio": "1:1",
-      "maxHeight": 300
-    }
   }
 }

@@ -1,6 +1,6 @@
 /* Cor do input search no header */
 .searchIcon, .searchBarContainer :first-child{
-    color: white;
+    color: #727273;
     border: 0px;
     /* background-color: transparent; */
 }
@@ -19,4 +19,11 @@
 
 .productBrand{
     color: white;
+}
+
+.imageElement--whatsapp{
+    position: fixed;
+    bottom: 60px;
+    z-index: 999;
+    right: 0px;
 }

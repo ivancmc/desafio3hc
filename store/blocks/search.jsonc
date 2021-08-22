@@ -72,7 +72,8 @@
         ],
         "props": {
             "pagination": "show-more",
-            "preventRouteChange": true
+            "preventRouteChange": true,
+            "defaultGalleryLayout": "duasColunas"
         }
     },
     "flex-layout.row#top": {
@@ -111,16 +112,16 @@
             "layouts": [
                 {
                     "name": "umaColuna",
-                    "component": "DuasCols",
+                    "component": "Produto",
                     "itemsPerRow": 1
                 },
                 {
                     "name": "duasColunas",
-                    "component": "DuasCols",
+                    "component": "Produto",
                     "itemsPerRow": 2
                 }
             ],
-            "DuasCols": "product-summary.shelf#busca"
+            "Produto": "product-summary.shelf#busca"
         }
     },
     "search-result-layout.mobile#busca": {

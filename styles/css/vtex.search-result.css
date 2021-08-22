@@ -15,3 +15,15 @@
 .buttonShowMore :first-child{
     color: black;
 }
+
+.notFound--layout {
+    margin-top: 70px;
+}
+
+.searchNotFoundInfo, .galleryTitle--layout, .totalProducts--layout, .totalProductsMessage, .filterMessage, .filterTitle{
+    color: white;
+}
+
+.orderByOptionItem{
+    color: #727273;
+}

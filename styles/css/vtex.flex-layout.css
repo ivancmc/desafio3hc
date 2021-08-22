@@ -1,11 +1,10 @@
 .flexColChild--logoDesktop{
-    padding-left: 10px;
+    margin-top: -30px;
+    margin-bottom: -35px;
 }
 
 .flexColChild--logoMobile{
-    padding-left: 5px;
-    padding-top: 5px;
-    margin-right: 5px;
+    margin: -30px 30px -35px -15px;
 }
 
 /* Definindo a cor do background no mobile */
@@ -37,4 +36,8 @@
     position: fixed;
     z-index: 10;
     box-shadow: 0px 4px 4px 2px rgb(0 0 0 / 20%);
+}
+
+.flexRow--breadcrumb{
+    margin-top: 70px;
 }

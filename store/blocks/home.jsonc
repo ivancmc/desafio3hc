@@ -147,7 +147,7 @@
         "orderByField": "OrderByReleaseDateDESC",
         "hideUnavailableItems": true,
         "maxItemsPerPage": 8,
-        "queryField": "149",
+        "queryField": "157",
         "mapField": "productClusterIds"
       }
     },
@@ -163,8 +163,8 @@
         "orderByField": "OrderByReleaseDateDESC",
         "hideUnavailableItems": true,
         "maxItemsPerPage": 8,
-        "queryField": "147",
-        "mapField": "productClusterIds"
+        "queryField": "Kit UpMedal/Palmeiras",
+        "mapField": "c,c"
       }
     },
     "blocks": [
@@ -179,8 +179,8 @@
         "orderByField": "OrderByReleaseDateDESC",
         "hideUnavailableItems": true,
         "maxItemsPerPage": 8,
-        "queryField": "148",
-        "mapField": "productClusterIds"
+        "queryField": "Kit UpMedal/Corinthians",
+        "mapField": "c,c"
       }
     },
     "blocks": [
@@ -195,8 +195,8 @@
         "orderByField": "OrderByReleaseDateDESC",
         "hideUnavailableItems": true,
         "maxItemsPerPage": 8,
-        "queryField": "150",
-        "mapField": "productClusterIds"
+        "queryField": "Kit UpMedal/Signos",
+        "mapField": "c,c"
       }
     },
     "blocks": [
@@ -211,8 +211,8 @@
         "orderByField": "OrderByReleaseDateDESC",
         "hideUnavailableItems": true,
         "maxItemsPerPage": 8,
-        "queryField": "151",
-        "mapField": "productClusterIds"
+        "queryField": "Kit UpMedal/Promoção",
+        "mapField": "c,c"
       }
     },
     "blocks": [
@@ -251,16 +251,16 @@
       "layouts": [
         {
           "name": "umaColuna",
-          "component": "DuasCols",
+          "component": "Produto",
           "itemsPerRow": 1
         },
         {
           "name": "duasColunas",
-          "component": "DuasCols",
+          "component": "Produto",
           "itemsPerRow": 2
         }
       ],
-      "DuasCols": "product-summary.shelf"
+      "Produto": "product-summary.shelf"
     }
   },
   "search-result-layout.mobile": {

@@ -11,7 +11,12 @@
     padding-bottom: 0.75rem;
 }
 
+.nameContainer{
+    padding-left: 15px;
+}
+
 .productBrand{
+    color: white;
     font-size: 1.25rem;
     font-family: Montserrat;
     font-weight: 500;

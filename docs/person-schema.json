@@ -1,0 +1,23 @@
+{
+  "title": "person",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "Nome"
+    },
+    "email": {
+      "type": "string",
+      "format": "email",
+      "title": "Email"
+    },
+    "phone": {
+      "type": "string",
+      "title": "Telefone"
+    }
+  },
+  "required": ["name","email", "phone"],
+  "v-security": {
+    "publicJsonSchema": true
+  }
+}

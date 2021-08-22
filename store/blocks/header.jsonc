@@ -37,15 +37,29 @@
       "verticalAlign": "middle",
       "blockClass": "logoDesktop"
     },
-    "children": ["image#logo"]
+    "children": ["logo"]
+  },
+  "logo": {
+    "props": {
+      "width": 177,
+      "height": 88,
+      "mobileWidth": 120,
+      "mobileHeight": 72,
+      "url": "https://static.wixstatic.com/media/a43c66_f6dc742ad20845698e5e5d593225e229~mv2.png",
+      "href": "/"
+    }
   },
   "image#logo": {
     "props": {
       "src": "assets/logo.png",
-      "link": "/",
       "maxHeight": 42,
       "title": "Logo",
-      "alt": "Logotipo da loja"
+      "alt": "Logotipo da loja",
+      "link": {
+        "props":{
+          "href": "https://d3ivancmc--hiringcoders2021.myvtex.com/"
+        }
+      }
     }
   },
   "flex-layout.col#searchBar":{
@@ -62,12 +76,6 @@
   },
 
   "header-layout.mobile": {
-    "children": ["sticky-layout#mobile"]
-  },
-  "sticky-layout#mobile": {
-    "props": {
-      "blockClass": "sticky-header"
-    },
     "children": ["flex-layout.row#mobile"]
   },
   "flex-layout.row#mobile": {
@@ -78,7 +86,7 @@
       "minicart.v2"
     ],
     "props": {
-      "blockClass": "main-header-mobile",
+      "blockClass": "header1",
       "preventHorizontalStretch": true,
       "preserveLayoutOnMobile": true,
       "fullWidth": true
@@ -89,7 +97,7 @@
       "verticalAlign": "middle",
       "blockClass": "logoMobile"
     },
-    "children": ["image#logo"]
+    "children": ["logo"]
   }
   // "drawer": {
   //   "children": []

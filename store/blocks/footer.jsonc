@@ -19,8 +19,10 @@
   },
   "image": {
     "props": {
-      "width": 100,
-      "src": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg"
+      "title": "Fale com o suporte",
+      "width": 90,
+      "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/Logo+WhatsApp.png",
+      "blockClass": "whatsapp"
     }
   }
 }

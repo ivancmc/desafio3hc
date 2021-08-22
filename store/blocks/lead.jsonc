@@ -1,0 +1,79 @@
+{
+  "store.custom#lead": {
+    "children": [
+      "flex-layout.row#lead"
+    ]
+  },
+
+  "flex-layout.row#lead": {
+    "props": {
+      "blockClass": "lead"
+    },
+    "children": [
+      "flex-layout.col#lead"
+    ]
+  },
+
+  "flex-layout.col#lead": {
+    "children": [
+      "rich-text#lead",
+      "form#lead"
+    ]
+  },
+  "rich-text#lead": {
+    "props": {
+      "text": "## Quer receber nossas ofertas em primeira mão?"
+    }
+  },
+
+  "form#lead": {
+    "props": {
+      "entity": "clients",
+      "schema": "person"
+    },
+    "blocks": [
+      "form-success#lead"
+    ],
+    "children": [
+      "form-input.text#name",
+      "form-input.text#email",
+      "form-input.text#phone",
+      "form-submit#lead"
+    ]
+  },
+
+  "form-success#lead": {
+    "children": [
+      "rich-text#success-submit"
+    ]
+  },
+  "rich-text#success-submit": {
+    "props": {
+      "text": "Parabéns! Você receberá nossas ofertas em breve.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  
+  "form-input.text#name": {
+    "props": {
+      "pointer": "#/properties/name"
+    }
+  },
+  "form-input.text#email": {
+    "props": {
+      "pointer": "#/properties/email"
+    }
+  },
+  "form-input.text#phone": {
+    "props": {
+      "pointer": "#/properties/phone"
+    }
+  },
+
+  "form-submit#lead": {
+    "props": {
+      "label": "Eu quero!"
+    }
+  }
+}
