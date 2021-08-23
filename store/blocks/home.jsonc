@@ -7,12 +7,13 @@
 
   "tab-layout": {
     "children": [
-      "flex-layout.row##tabs",
+      "flex-layout.row#tabs",
       "slider-layout#banners",
+      "flex-layout.row#lead",
       "tab-content"
     ]
   },
-  "flex-layout.row##tabs": {
+  "flex-layout.row#tabs": {
     "props": {
       "blockClass": "header2"
     },
@@ -31,32 +32,32 @@
   "tab-list.item#cat1": {
     "props": {
       "tabId": "categoria1",
-      "label": "Categoria 1",
+      "label": "Desafios",
       "defaultActiveTab": true
     }
   },
   "tab-list.item#cat2": {
     "props": {
       "tabId": "categoria2",
-      "label": "Categoria 2"
+      "label": "Palmeiras"
     }
   },
   "tab-list.item#cat3": {
     "props": {
       "tabId": "categoria3",
-      "label": "Categoria 3"
+      "label": "Corinthians"
     }
   },
   "tab-list.item#cat4": {
     "props": {
       "tabId": "categoria4",
-      "label": "Categoria 4"
+      "label": "Signos"
     }
   },
   "tab-list.item#cat5": {
     "props": {
       "tabId": "categoria5",
-      "label": "Categoria 5"
+      "label": "Combos"
     }
   },
 

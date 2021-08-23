@@ -41,3 +41,7 @@
 .flexRow--breadcrumb{
     margin-top: 70px;
 }
+
+.flexRowContent--row-lead{
+    background-color: brown;
+}

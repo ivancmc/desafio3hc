@@ -1,79 +1,26 @@
 {
-  "store.custom#lead": {
-    "children": [
-      "flex-layout.row#lead"
-    ]
-  },
-
-  "flex-layout.row#lead": {
+  "flex-layout.row#lead":{
     "props": {
-      "blockClass": "lead"
+      "blockClass": "row-lead"
     },
+    "children": ["modal-trigger#lead"]
+  },
+  "modal-trigger#lead": {
     "children": [
-      "flex-layout.col#lead"
+      "rich-text#promo",
+      "modal-layout#leadform"
     ]
   },
-
-  "flex-layout.col#lead": {
-    "children": [
-      "rich-text#lead",
-      "form#lead"
-    ]
-  },
-  "rich-text#lead": {
+  "rich-text#promo": {
     "props": {
-      "text": "## Quer receber nossas ofertas em primeira mão?"
-    }
-  },
-
-  "form#lead": {
-    "props": {
-      "entity": "clients",
-      "schema": "person"
-    },
-    "blocks": [
-      "form-success#lead"
-    ],
-    "children": [
-      "form-input.text#name",
-      "form-input.text#email",
-      "form-input.text#phone",
-      "form-submit#lead"
-    ]
-  },
-
-  "form-success#lead": {
-    "children": [
-      "rich-text#success-submit"
-    ]
-  },
-  "rich-text#success-submit": {
-    "props": {
-      "text": "Parabéns! Você receberá nossas ofertas em breve.",
       "textAlignment": "CENTER",
-      "textPosition": "CENTER"
+      "textPosition": "CENTER",
+      "text": "#### Quer receber desconto em nossa loja? Clique aqui e saiba como!"
     }
   },
-  
-  "form-input.text#name": {
-    "props": {
-      "pointer": "#/properties/name"
-    }
-  },
-  "form-input.text#email": {
-    "props": {
-      "pointer": "#/properties/email"
-    }
-  },
-  "form-input.text#phone": {
-    "props": {
-      "pointer": "#/properties/phone"
-    }
-  },
-
-  "form-submit#lead": {
-    "props": {
-      "label": "Eu quero!"
-    }
+  "modal-layout#leadform": {
+    "children": [
+      "lead-form"
+    ]
   }
 }

@@ -1,0 +1,56 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  template for an HTTP API that creates, updates, and deletes leads in DynamoDB
+  
+Globals:
+  Function:
+    Timeout: 10
+
+Resources:
+  DDBHandlerFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: dynamo-handler/
+      Handler: app.handler
+      Runtime: nodejs14.x
+      Policies:
+        - DynamoDBCrudPolicy:
+            TableName: !Ref leadsTable
+      Events:
+        GetAllleads:
+          Type: HttpApi
+          Properties:
+            Path: /leads
+            Method: GET
+        GetAnItem:
+          Type: HttpApi
+          Properties:
+            Path: /leads/{id}
+            Method: GET
+        DeleteAnItem:
+          Type: HttpApi
+          Properties:
+            Path: /leads/{id}
+            Method: DELETE
+        CreateOrUpdateItem:
+          Type: HttpApi
+          Properties:
+            Path: /leads
+            Method: PUT
+
+  leadsTable:
+    Type: AWS::Serverless::SimpleTable
+    Properties:
+      PrimaryKey:
+        Name: id
+        Type: String
+      TableName: http-crud-leads
+
+Outputs:
+  ApiEndpoint:
+    Description: "The invoke URL for our HTTP API"
+    Value: !Sub "https://${ServerlessHttpApi}.execute-api.${AWS::Region}.amazonaws.com/leads"
+  Function:
+    Description: "DynamoDB handler function ARN"
+    Value: !GetAtt DDBHandlerFunction.Arn
